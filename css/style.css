@@ -1,0 +1,616 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    position: relative;
+    perspective: 2000px;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    background-color: #fbfaf5b2;
+    display: grid;
+    grid-template-columns: 50% 35% 15%;
+    position: fixed;
+    
+    z-index: 20;
+
+}
+
+.logo{
+    width: 70px;
+    height: 50px;
+}
+
+.header-list{
+    display: flex;
+    flex-direction: row ;
+    list-style-type: none;
+    flex-wrap: wrap;
+    padding: 10px;
+    
+}
+
+.header-list a {
+    margin: 0 0 0 40px;
+    text-decoration: none;  
+    color: #000;
+    font-weight: bold;
+    font-size: large;
+}
+
+.header-list a:hover{
+    color:brown;
+}
+
+.icons-header{
+    display: grid;
+    grid-template-columns: repeat(3, 30%);    
+}
+
+.header-icon{
+    margin:15px 40px 0 40px;
+    color: #000;
+}
+
+.header-icon:hover{
+    color:brown;
+}
+
+/*/////////////////////////end of header///////////////////////////////*/
+
+.bg-img{
+    width: 100%;
+    height: 530px;
+    position: relative;
+    position: absolute;
+    top: 50px;
+    background-size: cover;
+    background-image: url(../images/bgip2.jpg);
+    
+}
+
+.bg-detailes{
+    width: 100%;
+    height: 380px;
+    position: absolute;
+    position: relative;
+}
+
+.bg-icons{
+    width: 50px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    opacity: 0;
+    
+}
+.bg-icons:hover{
+    opacity: 1;    
+}
+
+.bg-icon:hover {
+    color: #ffffff;   
+}
+
+.bg-icon{
+    color: #ffffff8b;
+    padding: 10px 10px;
+}
+
+.bg-text{
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    top: 30%;
+    left: 7%;
+}
+
+.bg-text p{
+    
+    color: #000;
+    font-size: xx-large;
+    font-weight:normal;
+}
+.bg-text span{
+    font-weight: bolder;
+}
+
+.bg-btn{
+    width: 10%px;
+    height: 6%px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    position: absolute;
+    color: #000;
+    font-weight: bold;
+    top: 50%;
+    left: 7%;
+
+}
+
+.bg-btn:hover{
+    color: brown;
+    width: 12%px;
+    font-size: large;
+}
+
+/*////////////////////////end of main////////////////////////////////*/
+
+
+.container{
+    width: 100%;
+    height: 1100px;
+    position: absolute;
+    top: 600px;
+}
+
+.categories-cont{
+    width: 100%;
+    height: 460px;
+    
+}
+
+.categories-cont h1{
+    line-height: 60px;
+    text-align: center;
+}
+
+.categories{
+    width: 100%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    
+}
+
+.category{
+    width: 200px;
+    height: 350px;
+    margin: 10px 0 0 50px;
+}
+
+.category1{
+    width: 200px;
+    height: 250px;
+    background-image: url(../images/sunkit.webp);
+    background-size: cover;
+    margin-bottom: 30px;
+}
+.category2{
+    width: 200px;
+    height: 250px;
+    background-image: url(../images/scents.webp);
+    background-size: cover;
+    margin-bottom: 30px;
+}
+.category3{
+    width: 200px;
+    height: 250px;
+    background-image: url(../images/BodyWash.webp);
+    background-size: cover;
+    margin-bottom: 30px;
+}
+.category4{
+    width: 200px;
+    height: 250px;
+    background-image: url(../images/Capture.PNG);
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+.cat-text span, h4{
+    font-size: small;
+    margin: 10px 0 0 10px;
+}
+
+.cat-btn{
+    background-color: #00000000;
+    border: none;
+    font-size: 11px;
+    visibility: hidden;
+}
+.category:hover .cat-btn{
+    visibility: visible;
+}
+.cat-btn:hover{
+    text-decoration: underline;
+}
+
+/*////////////////////////end of Categories////////////////////////////////*/
+
+
+.container2{
+    width: 100%;
+    height: 400px;
+    
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+}
+
+.best-img{
+    width: 100%;
+    height: 400px;
+    
+}
+.best-overlay{
+    width: 100%;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: relative;
+}
+
+.best-icon{
+    color: #000;
+    font-size: 70px;
+    
+}
+.best-text span{
+    font-size: larger;
+    font-weight: bolder;
+}
+.best-text{
+    width:70% ;
+    height: 200px;
+    position: absolute;
+    transform: translate(-50%,-60%);
+    left: 50%;
+    top: 50%;
+}
+
+/*////////////////////////end of Bestseller////////////////////////////////*/
+
+
+.bundles{
+    display: grid;
+    grid-template-columns: repeat(2,50%); 
+}
+
+.bundle1{
+width: 100%;
+height: 100%;
+background-image: url(../images/serum1.webp);
+background-size: cover;
+position: relative;
+}
+.bundle2{
+width: 100%;
+height: 100%;
+background-image: url(../images/serum2.webp);
+background-size: cover;
+position: relative;
+}
+.bundle-text{
+    width: 50%;
+    height: 30%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:20%;
+    left:50%;
+}
+.best-text h2,h3{
+    text-align: center;
+}
+
+/*////////////////////////end of Discounts////////////////////////////////*/
+
+
+.animated-icons{
+    width: 100%;
+    height: 240px;
+}
+
+.overlay-anim{
+    width: 100%;
+    height: 240px;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+}  
+   
+
+.animated-div{
+    width:13%;
+    height:12%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 20%;
+    left: 50%;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.anim-p{
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    top: 60%;
+    left: 50%;
+}
+
+.anim-icon1{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.anim-icon1:hover .animated-div{
+    color: brown;
+    transform: translate(-50%,-50%) rotateX(360deg);
+    transition: 1s;
+}
+.anim-icon2{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.anim-icon2:hover .animated-div{
+    color: brown;
+    transform: translate(-50%,-50%) rotateX(360deg);
+    transition: 1s;
+}
+.anim-icon3{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.anim-icon3:hover .animated-div{
+    color: brown;
+    transform: translate(-50%,-50%) rotateX(360deg);
+    transition: 1s;
+}
+.anim-icon4{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.anim-icon4:hover .animated-div{
+    color: brown;
+    transform: translate(-50%,-50%) rotateX(360deg);
+    transition: 1s;
+}
+
+/*////////////////////////end of Container1 & icons div////////////////////////////////*/
+
+
+.products{
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    top: 1700px;
+}
+
+.products h2{
+    text-align: center;
+    line-height: 50px;
+}
+
+
+.featured-products{
+    width: 100%;
+    height: 650px;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-template-rows:repeat(2,50%);
+    
+}
+.featured-products h4{
+    text-align: center;
+    font-size: xx-large;
+}
+
+.prod-icons{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 40%;
+    left: 80%;
+    background-color: #0000006c;
+    display: flex;
+    flex-direction: column;
+}
+.prod-icon{
+    text-align: center;
+    font-size: xx-large;
+}
+
+.prod1{
+    grid-row: 1/2;
+    grid-column: 1/3;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1s;
+}
+.img1{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/sunkit.webp);
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    backface-visibility: hidden;
+}
+.info1{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/sunkit2.jpg);
+    background-size: cover;
+    position: absolute;
+    position: relative;
+    z-index: 0;
+    transform: rotateY(180deg);
+}
+.prod1:hover{
+    transform: rotateY(180deg);
+}
+.prod2{
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1s;
+}
+.img2{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/GinsengOil.webp);
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    backface-visibility: hidden;
+}
+.info2{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/cleanser2.webp);
+    background-size: cover;
+    position: absolute;
+    position: relative;
+    z-index: 0;
+    transform: rotateY(180deg);
+}
+.prod2:hover{
+    transform: rotateY(180deg);
+}
+
+.prod3{
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1s;
+}
+.img3{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/exfoliator.webp);
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    backface-visibility: hidden;
+}
+.info3{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/exf.avif);
+    background-size: cover;
+    position: absolute;
+    position: relative;
+    z-index: 0;
+    transform: rotateY(180deg);
+}
+.prod3:hover{
+    transform: rotateY(180deg);
+}
+
+.prod4{
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1s;
+    
+}
+.img4{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/Ginsengtoner.webp);
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    backface-visibility: hidden;
+}
+.info4{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/toner2.webp);
+    background-size: cover;
+    position: absolute;
+    position: relative;
+    z-index: 0;
+    transform: rotateY(180deg);
+}
+.prod4:hover{
+    transform: rotateY(180deg);
+}
+
+.prod5{
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1s;
+}
+.img5{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/cream.webp);
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    backface-visibility: hidden;
+}
+.info5{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/cream2.webp);
+    background-size: cover;
+    position: absolute;
+    position: relative;
+    z-index: 0;
+    transform: rotateY(180deg);
+}
+.prod5:hover{
+    transform: rotateY(180deg);
+}
+
+.prod6{
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1s;
+}
+.img6{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/serums.webp);
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    backface-visibility: hidden;
+}
+.info6{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/serums2.webp);
+    background-size: cover;
+    position: absolute;
+    position: relative;
+    z-index: 0;
+    transform: rotateY(180deg);
+}
+.prod6:hover{
+    transform: rotateY(180deg);
+}
+
+.prod7{
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1s;
+}
+.img7{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/mask.webp);
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    backface-visibility: hidden;
+}
+.info7{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/mask2.webp);
+    background-size: cover;
+    position: absolute;
+    position: relative;
+    z-index: 0;
+    transform: rotateY(180deg);
+}
+.prod7:hover{
+    transform: rotateY(180deg);
+}
